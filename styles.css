@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --width_of_calculator: calc(20% + 100px);
+    --height_of_screen: 200px;
+    --height_of_keyboard: 300px;
+    --minimum-width: 300px;
+}
+
+#screen {
+    margin:auto;
+    min-width: var(--minimum-width);
+    width: var(--width_of_calculator);
+    height: var(--height_of_screen);
+    background-color: #9BBC0F;
+    padding: 30px;
+    border-style: solid;
+    border-width: 20px 30px 10px 30px;
+    border-color: #AAAAAA;
+    color:#306230;
+}
+
+#keyboard {
+    margin:auto;
+    min-width: var(--minimum-width);
+    background-color: #AAAAAA;
+    width: var(--width_of_calculator);
+    height: var(--height_of_keyboard);
+    display: flex;
+    padding: 0 30px 0 20px;
+    justify-content: center;
+}
+
+#numpad {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 150px;
+    width: 170px;
+    align-items: center;
+}
+#operators {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    height: 60px;
+    width: 50px;
+}
+
